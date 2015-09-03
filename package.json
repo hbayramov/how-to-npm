@@ -1,0 +1,19 @@
+{
+  "name": "@huseyn/how-to-npm",
+  "version": "1.0.0",
+  "description": "my very first package :-)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbayramov/how-to-npm.git"
+  },
+  "author": "Huseyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbayramov/how-to-npm/issues"
+  },
+  "homepage": "https://github.com/hbayramov/how-to-npm#readme"
+}
