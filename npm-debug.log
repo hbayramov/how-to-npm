@@ -1,25 +1,41 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/bin/npm', 'version', 'patch' ]
+1 verbose cli [ 'node', '/usr/bin/npm', 'view' ]
 2 info using npm@3.3.5
 3 info using node@v0.10.37
 4 verbose node symlink /usr/bin/node
-5 info git [ 'status', '--porcelain' ]
-6 verbose stack Error: Git working directory not clean.
-6 verbose stack D npm-debug.log
-6 verbose stack     at /usr/lib/node_modules/npm/lib/version.js:172:21
-6 verbose stack     at ChildProcess.exithandler (child_process.js:656:7)
-6 verbose stack     at ChildProcess.emit (events.js:98:17)
-6 verbose stack     at maybeClose (child_process.js:766:16)
-6 verbose stack     at Socket.<anonymous> (child_process.js:979:11)
-6 verbose stack     at Socket.emit (events.js:95:17)
-6 verbose stack     at Pipe.close (net.js:466:12)
-7 verbose cwd /home/huseyn/how-to-npm
-8 error Linux 3.13.0-65-generic
-9 error argv "node" "/usr/bin/npm" "version" "patch"
-10 error node v0.10.37
-11 error npm  v3.3.5
-12 error Git working directory not clean.
-12 error D npm-debug.log
-13 error If you need help, you may report this error at:
-13 error     <https://github.com/npm/npm/issues>
-14 verbose exit [ 1, true ]
+5 silly mapToRegistry name how-to-npm
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry http://localhost:15443/
+8 silly mapToRegistry uri http://localhost:15443/how-to-npm
+9 verbose request uri http://localhost:15443/how-to-npm
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 22:23:37
+12 verbose request id de73c7eb006520b8
+13 http request GET http://localhost:15443/how-to-npm
+14 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+15 info attempt registry request try #2 at 22:23:47
+16 http request GET http://localhost:15443/how-to-npm
+17 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+18 info attempt registry request try #3 at 22:24:47
+19 http request GET http://localhost:15443/how-to-npm
+20 verbose stack Error: connect ECONNREFUSED
+20 verbose stack     at errnoException (net.js:905:11)
+20 verbose stack     at Object.afterConnect [as oncomplete] (net.js:896:19)
+21 verbose cwd /home/huseyn/how-to-npm
+22 error Linux 3.13.0-65-generic
+23 error argv "node" "/usr/bin/npm" "view"
+24 error node v0.10.37
+25 error npm  v3.3.5
+26 error code ECONNREFUSED
+27 error errno ECONNREFUSED
+28 error syscall connect
+29 error Error: connect ECONNREFUSED
+29 error     at errnoException (net.js:905:11)
+29 error     at Object.afterConnect [as oncomplete] (net.js:896:19)
+29 error  { [Error: connect ECONNREFUSED]
+29 error   code: 'ECONNREFUSED',
+29 error   errno: 'ECONNREFUSED',
+29 error   syscall: 'connect' }
+30 error If you are behind a proxy, please make sure that the
+30 error 'proxy' config is set properly.  See: 'npm help config'
+31 verbose exit [ 1, true ]
