@@ -1,6 +1,6 @@
 {
   "name": "how-to-npm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "my very first package :-)",
   "main": "index.js",
   "scripts": {
